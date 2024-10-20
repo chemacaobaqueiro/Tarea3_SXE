@@ -12,3 +12,15 @@
      ```sh
      sudo docker images
      ```
+
+2. Crea un contenedor con el nombre 'dam_web1'.
+
+    ***Para crear el contenedor con el nombre tenemos que utilizar este comando***
+   ```sh
+   sudo docker container create -i -t --name dam-web1 httpd
+   ```
+   ***Comprobamos otra vez si se creó***
+   ```sh
+   sudo docker ps -a
+   ```
+

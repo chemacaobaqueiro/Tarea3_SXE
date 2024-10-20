@@ -62,4 +62,16 @@ Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un 
       ```sh
       http://10.0.9.151:8000
       ```
+5. ***Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.***
+
+      ***El procedimiento es el mismo, solo varían los puertos***
+   
+      ```sh
+      sudo docker run -d --name dam_web2 -p 9080:80 -v /home/desktop/apache_host:/usr/local/apache2/htdocs httpd:2.4
+
+      ```
+
+      ***Comprobamos si corre***
+      ```sh
+   sudo docker ps```
 

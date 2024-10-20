@@ -74,4 +74,12 @@ Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un 
       ***Comprobamos si corre***
       ```sh
    sudo docker ps```
+6. ***Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador: http://localhost:9080 http://localhost:8000***
+
+      ***Vamos a un navegador e introducimos***
+      ```sh
+      http://10.0.9.151:9080 
+    http://10.0.9.151:8000
+      ```
+
 

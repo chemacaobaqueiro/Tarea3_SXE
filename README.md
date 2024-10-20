@@ -82,4 +82,23 @@ Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un 
     http://10.0.9.151:8000
       ```
 
+7. ***Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página***
+
+      ***Nos vamos al html anterior y hacemos algun cambio***
+      ```sh
+   <html>
+        <head>
+            <title>Cambios en el hola mundo</title>
+        </head>
+        <body>
+            <h2><strong>Se han realizado los cambios<strong></h2>
+            <p style="color: blue;"Buenas tardes</p>
+        </body>
+    </html>
+      ```
+      ***Abrimos otra vez e introducimos esto***
+      ```sh
+       http://10.0.9.151:9080 
+    http://10.0.9.151:8000
+   ```
 
